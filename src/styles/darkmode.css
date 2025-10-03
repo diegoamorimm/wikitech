@@ -1,0 +1,410 @@
+/* Dark Mode Global Styles */
+
+/* Base dark mode colors */
+body.dark-mode {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-tertiary: #3a3a3a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #888888;
+  --border-color: #404040;
+  --shadow: rgba(0, 0, 0, 0.5);
+  
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* App Container */
+body.dark-mode .App {
+  background-color: var(--bg-primary);
+}
+
+body.dark-mode main {
+  background-color: var(--bg-primary);
+}
+
+/* Header Dark Mode */
+body.dark-mode .header {
+  background: linear-gradient(135deg, #2d1b69 0%, #1a0f3d 100%);
+}
+
+/* Home Container */
+body.dark-mode .home-container {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Post Cards */
+body.dark-mode .post-card {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+body.dark-mode .post-card:hover {
+  box-shadow: 0 6px 16px var(--shadow);
+}
+
+body.dark-mode .post-title {
+  color: var(--text-primary);
+}
+
+body.dark-mode .post-content {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .post-author {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .post-date {
+  color: var(--text-tertiary);
+}
+
+/* Footer Dark Mode */
+body.dark-mode .footer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-top: 1px solid var(--border-color);
+}
+
+body.dark-mode .footer-section h3,
+body.dark-mode .footer-section h4 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .footer-section p,
+body.dark-mode .footer-section ul li a {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .footer-section ul li a:hover {
+  color: var(--text-primary);
+}
+
+body.dark-mode .footer-bottom p {
+  color: var(--text-tertiary);
+}
+
+/* Posts Page Dark Mode */
+body.dark-mode .posts-page {
+  background-color: var(--bg-primary);
+}
+
+body.dark-mode .posts-header h1 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .posts-header p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .search-input,
+body.dark-mode .category-select {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+body.dark-mode .search-input::placeholder {
+  color: var(--text-tertiary);
+}
+
+body.dark-mode .search-input:focus,
+body.dark-mode .category-select:focus {
+  border-color: #667eea;
+  background: var(--bg-tertiary);
+}
+
+/* Post Page (Individual) Dark Mode */
+body.dark-mode .post-page {
+  background-color: var(--bg-primary);
+}
+
+body.dark-mode .post-article {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .post-header {
+  border-bottom-color: var(--border-color);
+}
+
+body.dark-mode .post-meta-info {
+  border-top-color: var(--border-color);
+}
+
+body.dark-mode .breadcrumb a {
+  color: #8b9bff;
+}
+
+body.dark-mode .breadcrumb span:not(.breadcrumb a) {
+  color: var(--text-tertiary);
+}
+
+body.dark-mode .post-content h1,
+body.dark-mode .post-content h2,
+body.dark-mode .post-content h3 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .post-content p,
+body.dark-mode .post-content {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .post-footer {
+  border-top-color: var(--border-color);
+}
+
+body.dark-mode .tag {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+body.dark-mode .tag:hover {
+  background: #667eea;
+  color: white;
+}
+
+body.dark-mode .share-btn {
+  background: var(--bg-secondary);
+  color: #8b9bff;
+  border-color: #667eea;
+}
+
+body.dark-mode .share-btn:hover {
+  background: #667eea;
+  color: white;
+}
+
+body.dark-mode .related-post-card {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .related-post-info h3 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .related-post-info p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .read-more {
+  color: #8b9bff;
+}
+
+/* About Page Dark Mode */
+body.dark-mode .about-page {
+  background-color: var(--bg-primary);
+}
+
+body.dark-mode .about-hero {
+  background: linear-gradient(135deg, #2d1b69 0%, #1a0f3d 100%);
+}
+
+body.dark-mode .about-section h2 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .about-section p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .value-card {
+  background: var(--bg-secondary);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+body.dark-mode .value-card h3 {
+  color: #8b9bff;
+}
+
+body.dark-mode .value-card p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .team-section {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .team-member {
+  background: var(--bg-tertiary);
+}
+
+body.dark-mode .team-member h3 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .member-bio {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .stats-section {
+  background: linear-gradient(135deg, #2d1b69 0%, #1a0f3d 100%);
+}
+
+body.dark-mode .cta-section {
+  background: var(--bg-secondary);
+}
+
+/* Contact Page Dark Mode */
+body.dark-mode .contact-page {
+  background-color: var(--bg-primary);
+}
+
+body.dark-mode .contact-hero {
+  background: linear-gradient(135deg, #2d1b69 0%, #1a0f3d 100%);
+}
+
+body.dark-mode .info-card {
+  background: var(--bg-secondary);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+body.dark-mode .info-card h3 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .info-card p {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .contact-form-container {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .contact-form-container h2 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .form-group label {
+  color: var(--text-primary);
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background: var(--bg-tertiary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+body.dark-mode .form-group input::placeholder,
+body.dark-mode .form-group textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+  background: var(--bg-secondary);
+  border-color: #667eea;
+}
+
+body.dark-mode .faq-section {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .faq-section h2 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .faq-item {
+  background: var(--bg-tertiary);
+}
+
+body.dark-mode .faq-item h3 {
+  color: #8b9bff;
+}
+
+body.dark-mode .faq-item p {
+  color: var(--text-secondary);
+}
+
+/* Categories Page Dark Mode */
+body.dark-mode .categories-page {
+  background-color: var(--bg-primary);
+}
+
+body.dark-mode .categories-hero {
+  background: linear-gradient(135deg, #2d1b69 0%, #1a0f3d 100%);
+}
+
+body.dark-mode .stat-item {
+  background: var(--bg-secondary);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+body.dark-mode .stat-label {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .category-card {
+  background: var(--bg-secondary);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+body.dark-mode .category-name {
+  color: var(--text-primary);
+}
+
+body.dark-mode .category-description {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .post-count {
+  color: var(--text-tertiary);
+}
+
+body.dark-mode .categories-cta {
+  background: var(--bg-secondary);
+}
+
+body.dark-mode .categories-cta h2 {
+  color: var(--text-primary);
+}
+
+body.dark-mode .categories-cta p {
+  color: var(--text-secondary);
+}
+
+/* Loading and Error States */
+body.dark-mode .loading,
+body.dark-mode .no-posts {
+  color: var(--text-secondary);
+}
+
+body.dark-mode .error {
+  color: #ff6b6b;
+}
+
+/* Buttons */
+body.dark-mode .retry-btn,
+body.dark-mode .back-btn,
+body.dark-mode .back-to-posts-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.dark-mode .location-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Social Links */
+body.dark-mode .social-links a {
+  background: var(--bg-tertiary);
+}
+
+body.dark-mode .social-links a:hover {
+  background: var(--bg-secondary);
+}
+
+/* Smooth transitions for all elements */
+body.dark-mode * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Preserve animations and transforms */
+body.dark-mode *:hover,
+body.dark-mode *:focus,
+body.dark-mode *:active {
+  transition: all 0.3s ease;
+}
